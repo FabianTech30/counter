@@ -5,9 +5,13 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Center(child: Text("Home")),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('App Bar'),
+        backgroundColor: Colors.blueAccent,
+        elevation: 2.0,
+      ),
+      body: const Center(child: Text('Home')),
     );
   }
 }
